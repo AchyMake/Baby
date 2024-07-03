@@ -1,0 +1,25 @@
+name: Baby
+version: '${project.version}'
+main: org.achymake.baby.Baby
+api-version: '1.21'
+prefix: '${project.name}'
+load: STARTUP
+author: AchyMake
+description: '${project.description}'
+commands:
+  baby:
+    description: message
+    permission: baby.command.baby
+permissions:
+  baby.command.baby:
+    description: message
+    default: op
+  baby.command.baby.other:
+    description: message
+    default: op
+  baby.command.baby.exempt:
+    description: message
+    default: op
+  baby.event.join.update:
+    description: message
+    default: op
